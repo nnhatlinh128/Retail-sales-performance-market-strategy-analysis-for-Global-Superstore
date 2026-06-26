@@ -112,9 +112,7 @@ The project utilizes three business tables.
 
 <img width="489" height="466" alt="Screenshot 2026-05-08 at 01 29 42" src="https://github.com/user-attachments/assets/473943bf-a07f-4d17-be37-04f60d62c9fd" />
 
-<img width="489" height="88" alt="Screenshot 2026-05-08 at 01 29 50" src="https://github.com/user-attachments/assets/0aae7dcb-0a2d-4d9d-a250-befe5f7820d8" />
-
-<img width="486" height="89" alt="Screenshot 2026-05-08 at 01 30 21" src="https://github.com/user-attachments/assets/dbceac5e-1bc0-4316-b117-52cfef2413ab" />
+<img width="600" height="234" alt="Screenshot 2026-06-26 at 16 52 10" src="https://github.com/user-attachments/assets/0998ebe3-9b03-4ab8-919c-9b08dcf49008" />
 
 ---
 

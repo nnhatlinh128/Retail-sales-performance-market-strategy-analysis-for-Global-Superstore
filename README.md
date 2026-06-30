@@ -13,7 +13,6 @@
 * [📌 Background & Overview](#-background--overview)
 * [📂 Dataset Description & Data Structure](#-dataset-description--data-structure)
 * [🧠 Design Thinking Process](#-design-thinking-process)
-* [⚒️ Dashboard Development Process](#️-dashboard-development-process)
 * [📊 Key Insights & Visualizations](#-key-insights--visualizations)
 * [🔎 Final Conclusion & Recommendations](#-final-conclusion--recommendations)
 
@@ -23,18 +22,19 @@
 
 ## 📖 What is this project about?
 
-This project analyzes global retail sales data and develops an interactive Power BI dashboard to evaluate business performance across markets, product categories, and customer segments. The dashboard provides strategic insights into sales growth, profitability, customer behavior, and operational risks to support data-driven business decisions.
+This project aims to build an interactive Power BI dashboard using the **Global Superstore** dataset, which includes sales transactions (`Orders`), regional managers (`People`), and product returns (`Returns`). The dashboard transforms raw business data into actionable insights to help decision-makers:
 
-## 🎯 Project Objectives
+✔️ Monitor overall sales performance, profitability, and business growth.
 
-The objectives of this project are to:
+✔️ Compare market performance across different geographic regions.
 
-* ✔️ Monitor overall sales, profit, and business growth.
-* ✔️ Compare market performance across different geographic regions.
-* ✔️ Evaluate product portfolio profitability and revenue contribution.
-* ✔️ Analyze customer acquisition, retention, and return behavior.
-* ✔️ Identify operational risks affecting business performance.
-* ✔️ Provide strategic recommendations for market expansion and product optimization.
+✔️ Evaluate product portfolio profitability and revenue contribution.
+
+✔️ Analyze customer acquisition, retention, and return behavior.
+
+✔️ Identify operational risks affecting business performance.
+
+✔️ Support strategic decisions for market expansion and product optimization.
 
 ---
 
@@ -42,11 +42,15 @@ The objectives of this project are to:
 
 This dashboard is designed for:
 
-* ✔️ Business Executives and Senior Managers to monitor overall business performance.
-* ✔️ Regional Managers to compare sales and profitability across markets.
-* ✔️ Product Managers to evaluate product portfolio performance.
-* ✔️ Business Intelligence Analysts and Data Analysts to support strategic decision-making.
-* ✔️ Stakeholders who require executive-level performance reporting.
+✔️ Business Executives and Senior Managers to monitor overall business performance.
+
+✔️ Regional Managers to compare sales and profitability across markets.
+
+✔️ Product Managers to evaluate product portfolio performance.
+
+✔️ Business Intelligence Analysts and Data Analysts to support strategic decision-making.
+
+✔️ Stakeholders who require executive-level performance reporting.
 
 ---
 
@@ -120,7 +124,7 @@ The project utilizes three business tables.
 
 The dashboard follows a **Star Schema** design consisting of one fact table and two dimension tables. This structure improves report performance, simplifies DAX calculations, and enables scalable business analysis.
 
-<img width="383" height="217" alt="Data model" src="https://github.com/user-attachments/assets/854917b7-41d0-4ba6-8c5c-1a705c8e60b8" />
+<img width="764" height="431" alt="Screenshot 2026-06-30 at 17 08 39" src="https://github.com/user-attachments/assets/9c55cf53-f941-44b5-a360-dc2c3dfd84d0" />
 
 ---
 
@@ -132,131 +136,20 @@ The dashboard was designed following the Design Thinking methodology to ensure a
 
 ## 1️⃣ Empathize
 
-Understand stakeholder challenges.
+<img width="1536" height="1024" alt="Sales" src="https://github.com/user-attachments/assets/5b44a4eb-402c-49d6-aa0d-118234e262d1" />
 
-* Executives need a high-level overview of business growth and profitability.
-* Regional managers require market-level performance comparisons.
-* Product managers need insights into product profitability and portfolio performance.
-* Analysts need an efficient way to identify operational risks and growth opportunities.
-
-<img width="892" height="539" alt="Screenshot 2026-05-08 at 01 31 45" src="https://github.com/user-attachments/assets/dc98e993-98d9-4a83-bced-ebc31865e1ae" />
+<img width="1536" height="1024" alt="Sales 2" src="https://github.com/user-attachments/assets/a0994ab0-7923-4ef4-bb0e-2fde05d5f911" />
 
 ---
 
 ## 2️⃣ Define
 
-Translate business challenges into analytical questions.
+<img width="1536" height="1024" alt="sales 3" src="https://github.com/user-attachments/assets/471d9f9c-234b-46c3-81e6-a0d5a4995c6d" />
 
-Key business questions include:
+<img width="1536" height="1024" alt="sales 4" src="https://github.com/user-attachments/assets/30996db9-9446-4bf6-a1bc-8fda30aa4555" />
 
-* Which markets generate the highest sustainable profitability?
-* Which product categories contribute most to revenue and profit?
-* Which markets should be prioritized for future expansion?
-* Which products and regions present higher operational risks?
-* How has business performance evolved over time?
-* How do customer acquisition and retention differ across markets?
-
-<img width="892" height="367" alt="Screenshot 2026-05-08 at 01 31 54" src="https://github.com/user-attachments/assets/1b6ec2cd-e889-43f0-a440-3157ba5d8001" />
 
 ---
-
-## 3️⃣ Ideate
-
-Design an executive dashboard capable of answering strategic business questions from multiple analytical perspectives.
-
-Dashboard pages include:
-
-* Executive Overview
-* Market Analysis
-* Product Analysis
-* Product-Market Database
-* Business Insights & Recommendations
-
-<img width="892" height="559" alt="Screenshot 2026-05-08 at 01 32 02" src="https://github.com/user-attachments/assets/22b1972d-2690-42e3-8d3f-185604541e5d" />
-
----
-
-## 4️⃣ Prototype
-
-<img width="584" height="81" alt="Screenshot 2026-05-08 at 00 25 37" src="https://github.com/user-attachments/assets/f943f9f9-fde7-4229-8819-e1ae3a0673ce" />
-
----
-
-## 5️⃣ Review
-
-<img width="584" height="25" alt="Screenshot 2026-05-08 at 00 25 44" src="https://github.com/user-attachments/assets/f969f109-d34f-46bf-8717-113fc1589f3d" />
-
----
-
-# ⚒️ Dashboard Development Process
-
-## 1️⃣ Data Preparation
-
-Power Query was used to clean and transform the raw dataset before visualization.
-
-Main transformation steps:
-
-* Removed duplicate records
-* Standardized data types
-* Handled missing values
-* Renamed columns
-* Created date hierarchy
-* Built relationships between business tables
-
----
-
-## 2️⃣ Data Modeling
-
-Implemented a **Star Schema** consisting of:
-
-* 1 Fact Table
-* 2 Dimension Tables
-
-Benefits:
-
-* Improved report performance
-* Simplified DAX calculations
-* Better scalability and maintainability
-
----
-
-## 3️⃣ DAX Measures
-
-Key business measures include:
-
-* Total Sales
-* Total Profit
-* Profit Margin
-* Total Orders
-* Return Rate
-* Average Order Value (AOV)
-* Profit Growth
-* Sales Growth
-
-DAX functions applied:
-
-* `CALCULATE()`
-* `SUM()`
-* `DIVIDE()`
-* `DISTINCTCOUNT()`
-* `TOTALYTD()`
-* `DATEADD()`
-
----
-
-## 4️⃣ Dashboard Development
-
-The dashboard was developed with interactive visualizations, including:
-
-* KPI Cards
-* Sales & Profit Trend Analysis
-* Market Performance Comparison
-* Product Portfolio Matrix
-* Customer Analysis
-* Geographic Performance Analysis
-* Risk Monitoring Dashboard
-* Drill-through Database
-* Interactive Slicers
 
 # 📊 Key Insights & Visualizations
 

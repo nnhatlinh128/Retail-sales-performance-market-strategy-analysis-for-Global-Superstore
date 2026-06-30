@@ -79,11 +79,50 @@ The project uses one fact table and two dimension tables.
 ## 📑 Data Dictionary
 
 <details>
-<summary><strong>Click to view Data Dictionary</strong></summary>
+<summary><strong>📋 Click to view Data Dictionary</strong></summary>
 
-<img width="489" height="466" alt="Data Dictionary" src="https://github.com/user-attachments/assets/473943bf-a07f-4d17-be37-04f60d62c9fd" />
+### 📌 Orders (Fact Table)
 
-<img width="600" height="234" alt="Data Snapshot" src="https://github.com/user-attachments/assets/0998ebe3-9b03-4ab8-919c-9b08dcf49008" />
+| Column | Description |
+|--------|-------------|
+| Row ID | Unique identifier for each transaction row. |
+| Order ID | Unique identifier for each customer order. |
+| Order Date | Date when the order was placed. |
+| Ship Date | Date when the order was shipped. |
+| Ship Mode | Shipping method used for delivery. |
+| Customer ID | Unique identifier for each customer. |
+| Customer Name | Customer full name. |
+| Segment | Customer segment category. |
+| City | Customer city. |
+| State | Customer state or province. |
+| Country | Customer country. |
+| Postal Code | Postal code of the customer location. |
+| Market | Global market classification. |
+| Region | Geographic sales region. |
+| Product ID | Unique identifier for each product. |
+| Category | Main product category. |
+| Sub-Category | Product sub-category. |
+| Product Name | Product name. |
+| Sales | Revenue generated from the transaction. |
+| Quantity | Number of products sold. |
+| Discount | Discount applied to the transaction. |
+| Profit | Net profit generated from the transaction. |
+| Shipping Cost | Shipping cost associated with the order. |
+| Order Priority | Priority level of the order. |
+
+### 📌 People (Dimension Table)
+
+| Column | Description |
+|--------|-------------|
+| Person | Regional manager responsible for the sales region. |
+| Region | Geographic sales region managed by the regional manager. |
+
+### 📌 Returns (Dimension Table)
+
+| Column | Description |
+|--------|-------------|
+| Returned | Indicates whether an order was returned. |
+| Order ID | Identifier of the returned order. |
 
 </details>
 

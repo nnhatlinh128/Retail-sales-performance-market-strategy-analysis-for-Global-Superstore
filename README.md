@@ -20,21 +20,19 @@
 
 # 📌 Background & Overview
 
-## 📖 What is this project about?
+## 🎯 Business Problem
 
-This project aims to build an interactive Power BI dashboard using the **Global Superstore** dataset, which includes sales transactions (`Orders`), regional managers (`People`), and product returns (`Returns`). The dashboard transforms raw business data into actionable insights to help decision-makers:
+Global Superstore is a retail company operating across multiple markets and product categories worldwide. As the business continues to grow, senior managers need a centralized dashboard to monitor business performance and support strategic decision-making.
 
-✔️ Monitor overall sales performance, profitability, and business growth.
+The dashboard is designed to answer the following business questions:
 
-✔️ Compare market performance across different geographic regions.
+✔️ **Overall Business Performance:** How is the business performing? Are sales, profit, and profitability growing over time?
 
-✔️ Evaluate product portfolio profitability and revenue contribution.
+✔️ **Market Performance:** Which markets are performing well, and which markets require greater attention?
 
-✔️ Analyze customer acquisition, retention, and return behavior.
+✔️ **Product Performance:** Which product categories and sub-categories generate the highest revenue and profit? Which products should be prioritized for future growth?
 
-✔️ Identify operational risks affecting business performance.
-
-✔️ Support strategic decisions for market expansion and product optimization.
+This project uses **Power BI** to transform raw sales data into an interactive dashboard that helps decision-makers monitor business performance, evaluate market and product performance, and make data-driven business decisions.
 
 ---
 
@@ -62,61 +60,32 @@ This dashboard is designed for:
 |------|-------------|
 | Dataset | Global Superstore Sales Dataset |
 | Format | CSV |
-| Visualization Tool | Power BI |
-| Data Transformation | Power Query |
-| Calculation | DAX |
+| Tools | Power BI, Power Query, DAX |
 
 ---
 
 ## 📊 Dataset Overview
 
-The project utilizes three business tables.
+The project uses one fact table and two dimension tables.
 
-| Table | Description |
-|--------|-------------|
-| Orders | Sales transaction records |
-| Returns | Returned orders information |
-| People | Regional manager information |
+| Table | Type | Description |
+|--------|------|-------------|
+| Orders | Fact | Sales transaction records |
+| Returns | Dimension | Returned order information |
+| People | Dimension | Regional manager information |
 
 ---
 
 ## 📑 Data Dictionary
 
-### Fact Table
+<details>
+<summary><strong>Click to view Data Dictionary</strong></summary>
 
-* `Orders`
+<img width="489" height="466" alt="Data Dictionary" src="https://github.com/user-attachments/assets/473943bf-a07f-4d17-be37-04f60d62c9fd" />
 
-### Dimension Tables
+<img width="600" height="234" alt="Data Snapshot" src="https://github.com/user-attachments/assets/0998ebe3-9b03-4ab8-919c-9b08dcf49008" />
 
-* `Returns`
-* `People`
-
-### Main Measures
-
-* Total Sales
-* Total Profit
-* Profit Margin
-* Total Orders
-* Return Rate
-* Average Order Value (AOV)
-
-### Main Dimensions
-
-* Market
-* Country
-* Region
-* Category
-* Sub-Category
-* Segment
-* Customer Type
-* Ship Mode
-* Order Date
-
-### Data Dictionary
-
-<img width="489" height="466" alt="Screenshot 2026-05-08 at 01 29 42" src="https://github.com/user-attachments/assets/473943bf-a07f-4d17-be37-04f60d62c9fd" />
-
-<img width="600" height="234" alt="Screenshot 2026-06-26 at 16 52 10" src="https://github.com/user-attachments/assets/0998ebe3-9b03-4ab8-919c-9b08dcf49008" />
+</details>
 
 ---
 
